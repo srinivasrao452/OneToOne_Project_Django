@@ -10,6 +10,7 @@ class Student(models.Model):
     def __str__(self):
         return self.sname
 
+# Creating Course Model
 class Course(models.Model):
     cno = models.IntegerField()
     cname = models.CharField(max_length=50)

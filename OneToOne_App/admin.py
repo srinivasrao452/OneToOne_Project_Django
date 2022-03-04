@@ -9,5 +9,6 @@ class StudentAdmin(admin.ModelAdmin):
 class CourseAdmin(admin.ModelAdmin):
     list_display = ['id', 'cno','cname','cfee', 'student']
 
+# Register with admin site
 admin.site.register(Student,StudentAdmin)
 admin.site.register(Course,CourseAdmin)
